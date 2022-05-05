@@ -1,0 +1,21 @@
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const ticker = urlParams.get('ticker')
+
+  {
+  "symbol": ticker,
+  "colorTheme": "light",
+  "isTransparent": false,
+  "largeChartUrl": "",
+  "displayMode": "regular",
+  "width": 480,
+  "height": 830,
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
