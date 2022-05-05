@@ -1,24 +1,19 @@
+
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js"></script>
-  <script type="text/javascript">
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const ticker = urlParams.get('ticker')
-  
-  new TradingView.widget(
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AMD/financials-overview/" rel="noopener" target="_blank"><span class="blue-text">AMD Fundamental Data</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
   {
-  "symbol": ticker,
+  "symbol": "NASDAQ:AMD",
   "colorTheme": "light",
-  "isTransparent": false,
+  "isTransparent": true,
   "largeChartUrl": "",
   "displayMode": "regular",
   "width": 480,
   "height": 830,
   "locale": "en"
-  }
-    );
+}
   </script>
 </div>
 <!-- TradingView Widget END -->
